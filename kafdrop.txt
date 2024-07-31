@@ -1,5 +1,5 @@
 docker run --name kafdrop -d --rm -p 9000:9000 \
-  -e KAFKA_BROKERCONNECT=10.0.1.241:9092,10.0.1.2411:9093 \
+  -e KAFKA_BROKERCONNECT=10.0.1.241:9092,10.0.1.241:9093 \
   -e JVM_OPTS="-Xms32M -Xmx64M" \
   -e SERVER_SERVLET_CONTEXTPATH="/" \
   obsidiandynamics/kafdrop:latest
